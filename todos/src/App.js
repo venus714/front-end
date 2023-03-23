@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Signup from './components/Signup';
 
 function App() {
-  <div
+  <div className='App'>
+    <Signup/>
+    </div>
 }
  
 export default App;
