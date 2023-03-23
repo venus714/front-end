@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 function Login({ onLogin }) {
     const [username, setUsername] = useState("");
@@ -12,7 +12,7 @@ function Login({ onLogin }) {
         },
         body: JSON.stringify({ username }),
       })
-        .then((r) => r.json())
+        .then((res) => res.json())
         .then((user) => onLogin(user));
     }
   

@@ -7,7 +7,7 @@ function Signup() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const data = { firstName, lastName, email, password };
+    const data = {Name, email, password };
     const response = await fetch('/api', {
       method: 'POST',
       headers: {
@@ -22,7 +22,7 @@ function Signup() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        First Name:
+        Name:
         <input type="text" value={Name} onChange={(e) => setName(e.target.value)} /></label>
         <label>
         Email:
@@ -34,5 +34,6 @@ function Signup() {
     </form>
   );
 }
+<p>fffffffffffff</p>
 
 export default Signup;
